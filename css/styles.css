@@ -47,3 +47,19 @@ body{
 
 
 }
+
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+  top: 3000;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
