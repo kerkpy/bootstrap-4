@@ -34,7 +34,7 @@
             </ul>     
 
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a type="button" id="loginbutton">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>
            </div>
@@ -95,7 +95,7 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title text-dark">Reserve a Table </h4>
+                                <h4 class="modal-title">Reserve a Table </h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
@@ -161,7 +161,7 @@
                                         <div class="offset-md-2 col-md-10">
                                             
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                            <button type="submit" class="btn btn-primary" id="reservebutton">Reserve</button>
                                                 
                                         </div>
                                     </div>
@@ -175,8 +175,8 @@
                 </div>
 
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                    <a id="resbutton" role="button" class="btn btn-block nav-link btn-warning"
+                        >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -365,24 +365,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-        });
-
-        
-    </script>
+    <script src="js/scripts.js"></script>
 
 
 </body>
